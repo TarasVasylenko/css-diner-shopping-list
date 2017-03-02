@@ -44,7 +44,7 @@ main{
 
 form{
 	display: inline-block;
-	width: 545px;
+	width: 525px;
 	text-align: center;
 }
 
@@ -85,6 +85,8 @@ span.description:after{
 }
 
 input{
+	width: 17px;
+	height: 17px;
 	vertical-align: middle;
 	margin: 5px;
 }
@@ -100,7 +102,8 @@ label:focus{
 
 label:hover{
 	background: #625E77;
-	border: 2px solid #fff;
+	border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
 	transition: all .1s ease-in;
 }
 
