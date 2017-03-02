@@ -1,0 +1,120 @@
+html,body{
+	display: block;
+	background: #3c3d46;
+	padding: 0;
+	margin: 0;
+	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+header {
+	display: inline-block;
+	background: #4a4e56;
+	width: 100%;
+	text-align: center;
+	color: #eb7d7d;
+	margin: auto;
+	height: auto;
+	padding: 15px 0;
+}
+
+h1{
+	display: inline-block;
+	margin: inherit;
+	width: 100%;
+	padding: 2px;
+}
+
+h3{
+	display: inline-block;
+	font-weight: lighter;
+	margin: inherit;
+	width: 100%;
+	padding: 2px;
+}
+
+main{
+	display: inline-block;
+	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+	width: 100%;
+	text-align: center;
+	margin: 25px auto;
+}
+
+form{
+	display: inline-block;
+	width: 545px;
+	text-align: center;
+}
+
+label{
+	display:inline-block;
+	width: 100%;
+	text-align: left;
+	padding: 10px 0;
+	background: #88839E;
+}
+
+label:nth-child(even){ 
+	background: #7A7593;
+}
+
+span.value{
+	display: inline-block;
+	color: #fafaff;
+	font-size: 17px;
+	vertical-align: middle;
+}
+
+span.description{
+	display: inline-block;
+	color: #C9C1C5;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+span.description:before{
+	content: '(';
+	color: #C9C1C5;
+}
+
+span.description:after{
+	content: ')';
+	color: #C9C1C5;
+}
+
+input{
+	vertical-align: middle;
+	margin: 5px;
+}
+
+input:checked ~ span{
+	text-decoration: line-through;
+	color: #9F9EB4;
+}
+
+label:focus{
+	background: green;
+}
+
+label:hover{
+	background: #625E77;
+	border: 2px solid #fff;
+	transition: all .1s ease-in;
+}
+
+label:active{
+	background:#eb7d7d;
+}
+
+footer {
+	display: inline-block;
+	background: #4a4e56;
+	width: 545px;
+	text-align: center;
+	color: #eb7d7d;
+	margin: auto;
+	height: auto;
+	padding: 10px 0;
+}
