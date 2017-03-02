@@ -1,5 +1,10 @@
+/* Не нужно для всех элементов указывать display, он указываеться только если нужно изменить страндартное отображение браузером,
+ И горизонтальной прокрутки на сайте быть не должно, поэтому мы задаем box-sizing: border-box; для всех элементов
+ Я закомметнировала много где display: inline-block; и width: 100%; так как по умолчанию эти элементы имеют свойства
+ display: block; а это свойство подразумевает что элеиент занимет 100% от ширины экрана
+ И на картинке была бедая рамка, ее тоже нужно добавить*/
 html,body{
-	display: block;
+	/*display: block;*/
 	background: #3c3d46;
 	padding: 0;
 	margin: 0;
@@ -8,8 +13,13 @@ html,body{
 	text-align: center;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 header {
-	display: inline-block;
+	/* text-align работает на контент этого блока, так что свойство display сдесь display не нужно */
+	/*display: inline-block;*/
 	background: #4a4e56;
 	width: 100%;
 	text-align: center;
@@ -20,37 +30,40 @@ header {
 }
 
 h1{
-	display: inline-block;
+	/*display: inline-block;*/
 	margin: inherit;
-	width: 100%;
+	/*width: 100%;*/
 	padding: 2px;
 }
 
 h3{
-	display: inline-block;
+	/*display: inline-block;*/
 	font-weight: lighter;
 	margin: inherit;
-	width: 100%;
+	/*width: 100%;*/
 	padding: 2px;
 }
 
 main{
-	display: inline-block;
+	/*display: inline-block;*/
 	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
-	width: 100%;
+	/*width: 100%;*/
 	text-align: center;
 	margin: 25px auto;
 }
 
 form{
-	display: inline-block;
-	width: 525px;
-	text-align: center;
+	max-width: 525px;
+	margin: auto;
+	/*display: inline-block;*/
+	/*width: 525px;*/
+	/*text-align: center;*/
 }
 
 label{
-	display:inline-block;
-	width: 100%;
+	display: block;
+	/*display:inline-block;
+	width: 100%;*/
 	text-align: left;
 	padding: 10px 0;
 	background: #88839E;
@@ -114,7 +127,9 @@ label:active{
 footer {
 	display: inline-block;
 	background: #4a4e56;
-	width: 525px;
+	width: 100%;
+	max-width: 525px;
+	/*width: 525px;*/
 	text-align: center;
 	color: #eb7d7d;
 	margin: auto;
