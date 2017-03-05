@@ -6,6 +6,8 @@
 html,body{
 	/*display: block;*/
 	background: #3c3d46;
+	min-height: 100%;
+	height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
@@ -16,6 +18,13 @@ html,body{
 *{
 	box-sizing: border-box;
 }
+
+.container{
+	min-height: 100;
+	height: auto;
+	border: 5px solid #fff;
+}
+
 
 header {
 	/* text-align работает на контент этого блока, так что свойство display сдесь display не нужно */
